@@ -54,6 +54,7 @@ shuffle.addEventListener('click', ()=>{
     flatMatrix = matrix.flat()
     shuffleArr = shuffleArray(flatMatrix)
     matrix = getMatrix(shuffleArr)
+    playAudio()
     setPositionItems(matrix)
     
 })
