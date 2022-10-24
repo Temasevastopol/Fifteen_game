@@ -140,7 +140,7 @@ function swap(coords1, coords2, matrix){
 }
 
 function playAudio() {   
-    audio.src = './assets/sound.mp3'
+    audio.src = './assets/Sound_click.mp3'
     audio.currentTime = 0;
     audio.play();
   }
