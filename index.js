@@ -1,5 +1,6 @@
 const body = document.querySelector('body')
 const page = document.createElement('div')
+const audio = new Audio()
 
 page.classList.add('page')
 body.prepend(page)
@@ -71,6 +72,7 @@ containerNode.addEventListener('click', (event)=>{
     console.log(isValid)
     if(isValid){
         swap(blankCoords, buttonCoords, matrix)
+        playAudio()
         setPositionItems(matrix)
     }
 })
@@ -136,3 +138,12 @@ function swap(coords1, coords2, matrix){
     matrix[coords1.y][coords1.x] = matrix[coords2.y][coords2.x]
     matrix[coords2.y][coords2.x] = coords1Number
 }
+
+function playAudio() {   
+    audio.src = './assets/sound.mp3'
+    audio.currentTime = 0;
+    audio.play();
+  }
+function pauseAudio() {
+    audio.pause();
+  }
