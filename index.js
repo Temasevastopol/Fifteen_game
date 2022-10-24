@@ -43,10 +43,15 @@ shuffle.setAttribute('id', 'shuflle')
 shuffle.textContent = 'Shuffle'
 page.append(shuffle)
 
+let flatMatrix = matrix.flat()
+let shuffleArr = shuffleArray(flatMatrix)
+matrix = getMatrix(shuffleArr)
+setPositionItems(matrix)
+
 shuffle.addEventListener('click', ()=>{
     
-    const flatMatrix = matrix.flat()
-    const shuffleArr = shuffleArray(flatMatrix)
+    flatMatrix = matrix.flat()
+    shuffleArr = shuffleArray(flatMatrix)
     matrix = getMatrix(shuffleArr)
     setPositionItems(matrix)
     
