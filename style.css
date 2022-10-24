@@ -100,25 +100,31 @@ h1 {
 }
 @media (min-width: 321px) and (max-width:768px){
     .page{
-        width: 30%; 
+        width: 50%; 
     }
     .item{
-        font-size: 0.8rem;
+        font-size: 1.3rem;
    }
    .button{
     width: 60%;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
    }
 }
 @media (max-width: 320px){
     .page{
-        width: 30%; 
+        width: 90%;         
     }
     .item{
-        font-size: 0.6rem;
+        font-size: 0.4rem;
    }
    .button{
     /* width: 40%; */
     font-size: 0.5rem;
    }
+   .itemVal {    
+    width: 90%;
+    height: 90%;
+    margin: 4%;
+    box-shadow: inset 0 0 0 0.5px #922ec5
+    }
 }
